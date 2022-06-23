@@ -52,7 +52,7 @@ const handleInput = e => {
   const { username, password, confirmPassword, btn } = form;
   const { name } = e.target;
   getElement(name, e);
- btn.disabled = !validation(username.value, password.value,        confirmPassword.value);
+ btn.disabled = !validation(username.value, password.value, confirmPassword.value);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,4 +79,3 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(`user${unixTimestamp}`, JSON.stringify(submittedValue));
   });
 });
-
